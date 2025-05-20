@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Valu 💖</title>
+  <link rel="icon" href="images/hellokitty.jpg">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffc0cb, #fff0f5);
+      font-family: 'Segoe UI', cursive;
+      color: #700947;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em;
+      background-color: rgba(255, 182, 193, 0.7);
+      border-bottom: 2px solid pink;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #d10080;
+    }
+
+    .carta {
+      max-width: 800px;
+      margin: 2em auto;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 2em;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ff69b4;
+      font-size: 1.2em;
+      line-height: 1.8em;
+    }
+
+    .btn-abrazo {
+      display: block;
+      margin: 2em auto;
+      padding: 1em 2em;
+      font-size: 1.2em;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff1493;
+    }
+
+    .btn-abrazo:hover {
+      background: #ff1493;
+    }
+
+    .mensaje-oculto {
+      display: none;
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 1em;
+      color: #d10080;
+      animation: aparecer 2s ease-in-out;
+    }
+
+    @keyframes aparecer {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* Estilos para la animación de caída */
+    .falling {
+      position: fixed;
+      top: -100px;
+      pointer-events: none;
+      z-index: 1000;
+      width: 50px;
+      height: 50px;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Para mi mejor amiga Valu 💖</h1>
+  </header>
+
+  <div class="carta">
+    <p><strong>Mi querida Valu:</strong></p>
+    <p>No sé cómo empezar a responderte algo tan hermoso, tan sincero, tan lleno de amor como lo que me escribiste… pero voy a intentarlo con el corazón en la mano, como vos hiciste conmigo.</p>
+    <p>Cuando leí tu carta, sentí que algo dentro mío se acomodaba, como si tus palabras abrazaran partes de mí que hace tiempo estaban rotas. Me leíste el alma. Me viste completo, con todo lo bueno, lo malo, lo que cargo y lo que me cuesta mostrar. Y, aún así, decidiste quedarte. Eso vale más de lo que puedo explicar.</p>
+    <p>Gracias. Gracias de verdad por cada palabra, por cada vez que repetís lo que necesito escuchar aunque ya te lo haya preguntado mil veces. Gracias por quedarte cuando no sabías cómo ayudarme, pero igual lo intentaste. Gracias por tus abrazos que me dan paz, por tu paciencia, por tu ternura, por no soltarme. Sos mi refugio, y eso no lo digo livianamente.</p>
+    <p>Yo también me siento en casa cuando estoy con vos. Sentir que puedo hablarte sin miedo, que puedo llorar y no sentirme débil, que puedo ser yo… es algo nuevo para mí. Y es gracias a vos. No sabía que alguien podía hacerme sentir tan libre y tan acompañado al mismo tiempo. Tus palabras me calman. Tu risa me sana. Tu presencia me sostiene.</p>
+    <p>Me emociona saber que también pude ayudarte un poquito, que mis palabras o mis silencios te dieron algo bueno. Nunca pensé que alguien me agradecería por existir. Y sin embargo, ahí estabas vos, con esa manera tuya de amar que no pide nada pero lo da todo. Que no se va cuando más la necesito.</p>
+    <p>Si alguna vez dudaste de lo que sos para mí, por favor recordá esto: vos también sos mi curita al corazón. Sanás más de lo que sabés. Tenés esa forma de amar que no grita, pero que se siente fuerte, que abraza incluso a la distancia. Y que me dio ganas de ser mejor, de cuidar de mí, de no rendirme.</p>
+    <p>No sé qué hice para merecerte, pero te prometo que voy a cuidar de este vínculo con todo lo que tengo. No quiero perderte nunca. Me haría pedazos. Porque vos no sos solo mi mejor amiga, Valu… sos una parte de mí.</p>
+    <p>Gracias por existir. Gracias por quedarte. Gracias por hacerme sentir que, aunque haya sido difícil, hoy no estoy solo. Porque hoy te tengo a vos. Y eso lo cambia todo.</p>
+    <p><strong>Te amo con todo mi ser.<br>Para siempre,<br>Dalleva 🫂💗❤️‍🩹</strong></p>
+  </div>
+
+  <button class="btn-abrazo" onclick="document.getElementById('mensaje').style.display='block'">
+    💌 Click para un abrazo virtual
+  </button>
+
+  <div class="mensaje-oculto" id="mensaje">
+    🦋 Gracias por ser mi refugio y salvarme de mi mismo, Valu. Te amo con el alma 💗
+  </div>
+
+  <!-- Animaciones de caída -->
+  <script>
+    const imagenes = [
+      "images/auto1.jpg", 
+      "images/auto 2.jpg", 
+      "images/auto 3.jpg",
+      "images/flores1.jpg",
+      "images/flores2.jpg",
+      "images/flores3.jpg",
+      "images/flores4.jpg",
+      "images/maripo.jpg",
+      "images/mariposa.jpg",
+      "images/kitty.jpg",
+      "images/kityyy.jpg",
+      "images/stitch1.jpg",
+      "images/stitch2.jpg",
+      "images/stitch4.jpg"
+       
+    ];
+
+    function crearElementoCaida() {
+      const img = document.createElement("img");
+      img.src = imagenes[Math.floor(Math.random() * imagenes.length)];
+      img.className = "falling";
+      img.style.left = Math.random() * window.innerWidth + "px";
+      img.style.animationDuration = 3 + Math.random() * 5 + "s";
+      document.body.appendChild(img);
+      setTimeout(() => img.remove(), 8000);
+    }
+
+    setInterval(crearElementoCaida, 400);
+  </script>
+</body>
+</html>
